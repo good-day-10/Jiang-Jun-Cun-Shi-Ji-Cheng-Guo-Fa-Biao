@@ -1,0 +1,1 @@
+- [Site ownership and clone permission](site-ownership.md) — user says the Wonder Scouts reference site is theirs and authorizes faithful copying as a redesign baseline.
