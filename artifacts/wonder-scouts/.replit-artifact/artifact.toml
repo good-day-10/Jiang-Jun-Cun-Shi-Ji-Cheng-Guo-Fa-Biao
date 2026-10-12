@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "少年導覽隊網站"
+description = "重現台灣少年導覽隊的成果與合作介紹網站，保留原站的繁體中文內容、圖片、影片連結與瀏覽器頁籤圖示，作為後續網站改版的起點。"
+version = "1.0.0"
+id = "artifacts/wonder-scouts"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19298
+
+[services.development]
+run = "pnpm --filter @workspace/wonder-scouts run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wonder-scouts", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/wonder-scouts/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19298"
+BASE_PATH = "/"
