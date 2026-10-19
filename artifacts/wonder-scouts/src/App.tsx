@@ -62,7 +62,7 @@ function App() {
       <div className="hero-bg"/><div className="hero-circle hc1"/><div className="hero-circle hc2"/><div className="hero-circle hc3"/>
       <div className="hero-inner">
         <div>
-          <h1 className="hero-title">少年導覽隊<br/><em>市集活動</em></h1>
+          <h1 className="hero-title">少年導覽隊<em>市集活動</em></h1>
           <p className="hero-desc">我們是台灣的孩子、是一群中小學生；我們走進古蹟、研究歷史、探索自然科學與天文生物，用青少年的視角設計沉浸式體驗，為每一個有故事的地方注入新的生命力。</p>
           <div className="award-row">
             <div className="award-pill"><span className="award-icon">🏆</span><span>金車文教基金會 第15屆<strong>文化理解組 全國首獎</strong></span></div>
